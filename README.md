@@ -38,6 +38,7 @@ Uçak Bilet Satış Uygulaması, kullanıcıların uçak biletlerini kolayca rez
 - **ORM:** EntityFramework
 - **Arayüz:** Windows Forms
 
+
 ### Kullanıcı Paneli
 1. Kayıt olma veya giriş yapma işlemini gerçekleştirin.
 2. Bilet almak istediğiniz lokasyonları seçin.
@@ -59,9 +60,17 @@ Uçak Bilet Satış Uygulaması, kullanıcıların uçak biletlerini kolayca rez
 - **Plane.cs:** Uçakları temsil eden sınıf.
 - **Reservation.cs:** Bilet rezervasyonlarını temsil eden sınıf.
 
-## Önemli Notlar
-- Bu uygulama temsili amaçlıdır ve gerçek bir bilet rezervasyon sistemi olarak kullanılmaz.
-- Uygulama, SQLite veritabanını kullanarak rezervasyonları "Data" klasöründeki db dosyasına kaydeder.
-- Kredi kartı giriş ekranı göstermeliktir; girilen veriler işlenmez veya kaydedilmez.
-- Hatalı girişlerde uygulama çökmez; hata mesajı gösterir ve kullanıcıyı tekrar giriş yapmaya yönlendirir.
-- Kullanıcı istediği zaman geri dönüp farklı bir seçim yapabilir ve bilet işlemlerini yeniden başlatabilir.
+## Proje Formları
+
+Proje, aşağıda belirtilen temel formlardan oluşacaktır. Ek olarak, kendi ihtiyaçlarınıza göre farklı formlar da ekleyebilirsiniz.
+
+### Uçak Formu
+- Uçak Modeli, Marka, Seri No, Koltuk Kapasitesi vb. bilgilerin listelenip kaydedileceği form.
+
+### Lokasyon Formu
+- Ülke, Şehir, Havaalanı, Aktif/Pasif vb. bilgilerin listelenip kaydedileceği form.
+
+### Rezervasyon Formu
+- Koltuklar satılmadıysa yeşil, satıldıysa kırmızı renge dönecek ve koltuk üzerine tıklandığında müşteri bilgileri dataliste görüntülenecek.
+
+.
